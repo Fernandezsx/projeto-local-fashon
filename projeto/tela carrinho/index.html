@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Fashion - Carrinho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <scipt src = "script.js"></scipt>
+</head>
+<body>
+    <!-- Header Igual às Outras Páginas -->
+    <header class="header">
+        <div class="logo">
+            <h1>Moda Fashion</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Masculino</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <!-- Conteúdo do Carrinho -->
+    <main class="cart-container">
+        <h1 class="cart-title">Seu Carrinho</h1>
+        
+        <div class="cart-items">
+            <!-- Produto 1 -->
+            <div class="cart-item">
+                <img src="imagem/vestido vemelho.webp" alt="Vestido Vermelho">
+                <div class="item-details">
+                    <h3>Vestido Vermelho</h3>
+                    <p class="item-price">R$ 99,90</p>
+                    <div class="item-quantity">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="remove-item"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+            
+            <!-- Produto 2 -->
+            <div class="cart-item">
+                <img src="imagem/camisa branca.webp" alt="Camisa Branca">
+                <div class="item-details">
+                    <h3>Camisa Branca</h3>
+                    <p class="item-price">R$ 59,90</p>
+                    <div class="item-quantity">
+                        <button class="quantity-btn minus">-</button>
+                        <span class="quantity">2</span>
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="remove-item"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Resumo do Pedido -->
+        <div class="cart-summary">
+            <h2>Resumo do Pedido</h2>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span class="subtotal">R$ 219,70</span>
+            </div>
+            <div class="summary-row">
+                <span>Frete:</span>
+                <span class="shipping">Grátis</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total:</span>
+                <span class="total-price">R$ 219,70</span>
+            </div>
+            <button class="btn-checkout">Finalizar Compra</button>
+            <a href="index.html" class="continue-shopping">Continuar Comprando</a>
+        </div>
+    </main>
+
+    <!-- Footer Igual às Outras Páginas -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Moda Fashion - A melhor loja de roupas online.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#">Política de Troca</a></li>
+                    <li><a href="#">Formas de Pagamento</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Moda Fashion</p>
+        </div>
+    </footer>
+
+    <script src="scripts/carrinho.js"></script>
+</body>
+</html>
